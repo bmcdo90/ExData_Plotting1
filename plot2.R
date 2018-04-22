@@ -1,3 +1,4 @@
+## check to see if packages that are needed are installed. if not, install them.
 list.of.packages <- c("sqldf", "Rcpp")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
